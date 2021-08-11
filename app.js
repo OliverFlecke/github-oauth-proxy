@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const fetch = require('node-fetch');
 const express = require('express');
 const cors = require('cors');
@@ -49,5 +50,5 @@ app.get('/', function (req, res) {
 });
 
 app.listen(port, function () {
-	console.log('Authorization server running');
+	console.log('Authorization proxy is running');
 });
